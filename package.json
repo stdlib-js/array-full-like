@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/array-full-like",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Create a filled array having the same length and data type as a provided array.",
   "license": "Apache-2.0",
   "author": {
