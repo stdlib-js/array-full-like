@@ -45,38 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-full-like
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-fullLike = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-full-like@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var fullLike = require( 'path/to/vendor/umd/array-full-like/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-full-like@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.fullLike;
-})();
-</script>
+var fullLike = require( '@stdlib/array-full-like' );
 ```
 
 #### fullLike( x, value\[, dtype] )
@@ -138,15 +130,10 @@ var arr = fullLike( x, 1, 'int32' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-full-like@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var dtypes = require( '@stdlib/array-dtypes' );
+var zeros = require( '@stdlib/array-zeros' );
+var fullLike = require( '@stdlib/array-full-like' );
 
 // Create a zero-filled array:
 var x = zeros( 4, 'complex128' );
@@ -161,11 +148,6 @@ for ( i = 0; i < dt.length; i++ ) {
     y = fullLike( x, 1.0, dt[ i ] );
     console.log( y );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -183,6 +165,14 @@ for ( i = 0; i < dt.length; i++ ) {
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/array-full`][@stdlib/array/full]</span><span class="delimiter">: </span><span class="description">create a filled array having a specified length.</span>
+-   <span class="package-name">[`@stdlib/array-ones-like`][@stdlib/array/ones-like]</span><span class="delimiter">: </span><span class="description">create an array filled with ones and having the same length and data type as a provided array.</span>
+-   <span class="package-name">[`@stdlib/array-zeros-like`][@stdlib/array/zeros-like]</span><span class="delimiter">: </span><span class="description">create a zero-filled array having the same length and data type as a provided array.</span>
 
 </section>
 
@@ -256,6 +246,16 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/array-full-like/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-full-like/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/array/full]: https://github.com/stdlib-js/array-full
+
+[@stdlib/array/ones-like]: https://github.com/stdlib-js/array-ones-like
+
+[@stdlib/array/zeros-like]: https://github.com/stdlib-js/array-zeros-like
+
+<!-- </related-links> -->
 
 </section>
 
