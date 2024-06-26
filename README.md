@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2022 The Stdlib Authors.
+Copyright (c) 2024 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -45,19 +45,37 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-full-like
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import fullLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-full-like@esm/index.mjs';
+var fullLike = require( '@stdlib/array-full-like' );
 ```
 
 #### fullLike( x, value\[, dtype] )
 
-Creates a filled array having the same length and data type as a provided array `x`.
+Creates a filled array having the same length and [data type][@stdlib/array/dtypes] as a provided array `x`.
 
 ```javascript
 var x = [ 1, 2, 3, 4, 5 ];
@@ -66,22 +84,7 @@ var arr = fullLike( x, 1 );
 // returns [ 1, 1, 1, 1, 1 ]
 ```
 
-The function supports the following data types:
-
--   `float64`: double-precision floating-point numbers (IEEE 754)
--   `float32`: single-precision floating-point numbers (IEEE 754)
--   `complex128`: double-precision complex floating-point numbers
--   `complex64`: single-precision complex floating-point numbers
--   `int32`: 32-bit two's complement signed integers
--   `uint32`: 32-bit unsigned integers
--   `int16`: 16-bit two's complement signed integers
--   `uint16`: 16-bit unsigned integers
--   `int8`: 8-bit two's complement signed integers
--   `uint8`: 8-bit unsigned integers
--   `uint8c`: 8-bit unsigned integers clamped to `0-255`
--   `generic`: generic JavaScript values
-
-By default, the output array data type is inferred from the provided array `x`. To return an array having a different data type, provide a `dtype` argument.
+By default, the output array [data type][@stdlib/array/dtypes] is inferred from the provided array `x`. To return an array having a different [data type][@stdlib/array/dtypes], provide a `dtype` argument.
 
 ```javascript
 var x = [ 1, 1 ];
@@ -100,7 +103,7 @@ var arr = fullLike( x, 1, 'int32' );
 
 ## Notes
 
--   If provided a number and the output array data type is a complex number data type, the function returns a complex number array where each element has a real component whose value equals the provided fill value and where each element has an imaginary component equal to `0`.
+-   If provided a number and the output array [data type][@stdlib/array/dtypes] is a complex number [data type][@stdlib/array/dtypes], the function returns a complex number array where each element has a real component whose value equals the provided fill value and where each element has an imaginary component equal to `0`.
 
 </section>
 
@@ -114,15 +117,10 @@ var arr = fullLike( x, 1, 'int32' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@esm/index.mjs';
-import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@esm/index.mjs';
-import fullLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-full-like@esm/index.mjs';
+```javascript
+var dtypes = require( '@stdlib/array-dtypes' );
+var zeros = require( '@stdlib/array-zeros' );
+var fullLike = require( '@stdlib/array-full-like' );
 
 // Create a zero-filled array:
 var x = zeros( 4, 'complex128' );
@@ -137,10 +135,6 @@ for ( i = 0; i < dt.length; i++ ) {
     y = fullLike( x, 1.0, dt[ i ] );
     console.log( y );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -180,7 +174,7 @@ for ( i = 0; i < dt.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -243,13 +237,15 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-full-like/main/LICENSE
 
+[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes
+
 <!-- <related-links> -->
 
-[@stdlib/array/full]: https://github.com/stdlib-js/array-full/tree/esm
+[@stdlib/array/full]: https://github.com/stdlib-js/array-full
 
-[@stdlib/array/ones-like]: https://github.com/stdlib-js/array-ones-like/tree/esm
+[@stdlib/array/ones-like]: https://github.com/stdlib-js/array-ones-like
 
-[@stdlib/array/zeros-like]: https://github.com/stdlib-js/array-zeros-like/tree/esm
+[@stdlib/array/zeros-like]: https://github.com/stdlib-js/array-zeros-like
 
 <!-- </related-links> -->
 
