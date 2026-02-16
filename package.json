@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@stdlib/array-dtype": "^0.3.1",
-    "@stdlib/array-full": "^0.3.0",
+    "@stdlib/array-full": "^0.3.1",
     "@stdlib/complex-float32-ctor": "^0.1.1",
     "@stdlib/complex-float64-ctor": "^0.1.2",
     "@stdlib/string-format": "^0.2.3",
