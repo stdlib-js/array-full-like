@@ -42,7 +42,7 @@
     "@stdlib/complex-float32-ctor": "^0.1.1",
     "@stdlib/complex-float64-ctor": "^0.1.2",
     "@stdlib/string-format": "^0.2.3",
-    "@stdlib/types": "^0.4.3",
+    "@stdlib/types": "^0.5.1",
     "@stdlib/error-tools-fmtprodmsg": "^0.2.3"
   },
   "devDependencies": {
@@ -50,6 +50,7 @@
     "@stdlib/array-complex128": "^0.3.2",
     "@stdlib/array-complex64": "^0.3.2",
     "@stdlib/array-dtypes": "^0.4.1",
+    "@stdlib/array-empty": "^0.3.1",
     "@stdlib/array-float32": "^0.2.3",
     "@stdlib/array-float64": "^0.2.3",
     "@stdlib/array-int16": "^0.2.3",
