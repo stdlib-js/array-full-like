@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-27)
+## Unreleased (2026-08-10)
+
+<section class="features">
+
+### Features
+
+-   [`de466c1`](https://github.com/stdlib-js/stdlib/commit/de466c1c7555e09de12ae363285fffaefedce4ef) - add float16 dtype support to `array/full-like` [(#14150)](https://github.com/stdlib-js/stdlib/pull/14150)
+
+</section>
+
+<!-- /.features -->
 
 <section class="commits">
 
@@ -12,6 +22,7 @@
 
 <details>
 
+-   [`de466c1`](https://github.com/stdlib-js/stdlib/commit/de466c1c7555e09de12ae363285fffaefedce4ef) - **feat:** add float16 dtype support to `array/full-like` [(#14150)](https://github.com/stdlib-js/stdlib/pull/14150) _(by Gururaj Gurram)_
 -   [`3901886`](https://github.com/stdlib-js/stdlib/commit/3901886ff5ff6bdbcfd65ea52109fee0b0e1ff03) - **docs:** fix examples and descriptions in top-level `array` declarations [(#12375)](https://github.com/stdlib-js/stdlib/pull/12375) _(by Philipp Burckhardt, Athan Reines)_
 -   [`86dc341`](https://github.com/stdlib-js/stdlib/commit/86dc341d3454ec7a1fd1aa16cbeae3b579d82f4c) - **bench:** use `empty` rather than `zeros` _(by Athan Reines)_
 -   [`b260ecf`](https://github.com/stdlib-js/stdlib/commit/b260ecf81debab4fb8571d9f41d28944fac33bbf) - **bench:** refactor to use string interpolation in `array/full-like` [(#10320)](https://github.com/stdlib-js/stdlib/pull/10320) _(by Shubham)_
@@ -26,9 +37,10 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Gururaj Gurram
 -   Philipp Burckhardt
 -   Shubham
 
